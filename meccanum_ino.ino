@@ -1,61 +1,64 @@
- int pinR[]={9,10,11,5};
- int pindr1[]={0,1,2,3};
- int pindr2[]={4,6,7,8};
 
 void setup(){
-	pinMode(pinR,OUTPUT);
-	pinMode(pindr1,OUTPUT);
-	pinMode(pindr2,OUTPUT);
-	
+	pinMode(5,OUTPUT);
+	pinMode(4,OUTPUT);
+	pinMode(3,OUTPUT);
+	pinMode(2,OUTPUT);
+
+        pinMode(22,OUTPUT);
+        pinMode(23,OUTPUT);
+        
+        pinMode(24,OUTPUT);
+        pinMode(25,OUTPUT);
+        
+        pinMode(26,OUTPUT);
+        pinMode(27,OUTPUT);
+        
+        pinMode(28,OUTPUT);
+        pinMode(29,OUTPUT);
+
 }
 
 void loop(){
     delay(500);
-    analogWrite(pinR[0],255);
-    digitalWrite(pindr1[0],HIGH);
-    digitalWrite(pindr2[0],LOW);
+    analogWrite(5,255);
+    digitalWrite(28,HIGH);
+    digitalWrite(29,LOW);
 
 
-    analogWrite(pinR[1],255);
-    digitalWrite(pindr1[1],HIGH);
-    digitalWrite(pindr2[1],LOW);
+    analogWrite(4,255);
+    digitalWrite(26,HIGH);
+    digitalWrite(27,LOW);
 
-    analogWrite(pinR[2],255);
-    digitalWrite(pindr1[2],HIGH);
-    digitalWrite(pindr2[2],LOW);
+    analogWrite(3,255);
+    digitalWrite(24,HIGH);
+    digitalWrite(25,LOW);
 
 
-        analogWrite(pinR[0],255);
-    digitalWrite(pindr1[3],HIGH);
-    digitalWrite(pindr2[3],LOW);
+        analogWrite(2,255);
+    digitalWrite(22,HIGH);
+    digitalWrite(23,LOW);
 
-        analogWrite(pinR[4],255);
-    digitalWrite(pindr1[4],HIGH);
-    digitalWrite(pindr2[4],LOW);
+        
 
     delay(5000);
 
-    analogWrite(pinR[0],255);
-    digitalWrite(pindr1[0],HIGH);
-    digitalWrite(pindr2[0],LOW);
+    analogWrite(5,255);
+    digitalWrite(28,HIGH);
+    digitalWrite(29,LOW);
 
 
-    analogWrite(pinR[1],255);
-    digitalWrite(pindr1[1],LOW);
-    digitalWrite(pindr2[1],HIGH);
+    analogWrite(4,255);
+    digitalWrite(26,LOW);
+    digitalWrite(27,HIGH);
 
-    analogWrite(pinR[2],255);
-    digitalWrite(pindr1[2],HIGH);
-    digitalWrite(pindr2[2],LOW);
+    analogWrite(3,255);
+    digitalWrite(24,HIGH);
+    digitalWrite(25,LOW);
 
 
-        analogWrite(pinR[0],255);
-    digitalWrite(pindr1[3],HIGH);
-    digitalWrite(pindr2[3],LOW);
-
-        analogWrite(pinR[4],255);
-    digitalWrite(pindr1[4],LOW);
-    digitalWrite(pindr2[4],HIGH);
-
-    break;
+        analogWrite(2,255);
+    digitalWrite(22,LOW);
+    digitalWrite(23,HIGH);
+    delay(5000);
 }
